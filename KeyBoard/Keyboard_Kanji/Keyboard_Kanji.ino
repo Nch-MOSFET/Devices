@@ -1,19 +1,17 @@
 //Arduino Pro Microを使用する場合次の行をコメント解除,Digisparkを使用する場合そのまま:
-#define Pro_Micro
+//#define Pro_Micro
 
 //入力の最後に改行を入れたい場合次の行をコメント解除:
-#define EndEnter_True
+//#define EndEnter_True
 
 //キーボード方式を指定, USキーボードとして扱われる場合次の行をコメント解除:
-#define US_Keyboard
+//#define US_Keyboard
 
-/* 
-nCreated number is 423nCreated number is 753nCreated number is 217n
- */
-
+//各Unicode配列に格納する要素数の指定:
 #define Kanji1_Long 6
 #define Kanji2_Long 6
 
+//入力させたい文字のUnicodeコードポイントを16進数で定義:
 uint16_t Kanji1[Kanji1_Long] = {0x4e00, 0x822c, 0x306e, 0x3054, 0x5bb6, 0x5ead};  //一般のご家庭:
 uint16_t Kanji2[Kanji2_Long] = {0x9038, 0x822c, 0x306e, 0x8aa4, 0x5bb6, 0x5ead};  //逸般の誤家庭:
 
