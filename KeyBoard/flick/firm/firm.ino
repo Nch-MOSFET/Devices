@@ -26,7 +26,7 @@ void setup(){
   }
   //pinModeでGPIO初期化:
   MsTimer2::set(50, mainLoop);
-  MsTimer2::begin;
+  MsTimer2::start;
 }
 
 void loop(){
@@ -57,3 +57,5 @@ void mainLoop(){
 void keyOut(uint16_t code){
   
 }
+
+uint8_t Read_MCP3208(uint8_t ch, )
