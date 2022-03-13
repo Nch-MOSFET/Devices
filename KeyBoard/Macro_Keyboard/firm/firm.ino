@@ -1,7 +1,18 @@
-#include <keyboard.h>
+int incomingByte = 0;	// 受信データ用
 
-void setup(){
+void setup() {
+	Serial.begin(9600);	// 9600bpsでシリアルポートを開く
 }
 
-void loop(){
+void loop() {
+	if (Serial.available() > 0) { // 受信したデータが存在する
+		incomingByte = Serial.read(); // 受信データを読み込む
+
+		Serial.print("I received: "); // 受信データを送りかえす
+		Serial.println(incomingByte, DEC);
+	}
 }
+
+/*
+Serialのテスト用に[http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=3245]のコードを引用
+ */
