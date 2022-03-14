@@ -23,7 +23,7 @@ void loop() {
 uint8_t encorder_Num(uint8_t dat){
   //0~9の処理:
   if(dat >= 0x30 && 0x39 >= dat){
-    return char(dat - 0x30);
+    return (dat - 0x30);
   }
 }
 char encorder_Chr(uint8_t dat){
