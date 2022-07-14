@@ -16,6 +16,7 @@ USBによる有線接続とBluetoothによる無線接続をサポート
 - 処理部
   - ESP-WROOM-32E
   - ATMega32U4
+  - RP2040
 - 入力部
   - SKRHAAE010
 
